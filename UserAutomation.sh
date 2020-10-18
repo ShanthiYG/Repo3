@@ -12,7 +12,7 @@ else
         else
                 echo "Lets create User $USER_NAME"
                 SPEC=$(echo '!@#$%^&*()_' | fold -w1 | shuf | head -1)
-                PASSWORD="India@${RANDOM}${SPEC}
+                PASSWORD="India@${RANDOM}${SPEC}"
                 useradd -m $USER_NAME
                 echo $PASSWORD
                 echo "$USER_NAME:$PASSWORD" | sudo chpasswd
