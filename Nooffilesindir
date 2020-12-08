@@ -1,0 +1,8 @@
+#!bin/bash
+echo "Enter your Directory name"
+read dir_name
+for file in $dir_name/*
+do
+b=`(sed -n '$=' $file)`
+echo "$file has $b lines"
+done
